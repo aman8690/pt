@@ -9,7 +9,11 @@ class student(models.Model):
 
 class test(models.Model):
     ques = models.TextField(max_length=100)
-    marks = models.CharField
+    option1=models.TextField(max_length=100)
+    option2=models.TextField(max_length=100)
+    option3=models.TextField(max_length=100)
+    option4=models.TextField(max_length=100)
+    answer=models.TextField(max_length=100)
 
 class institute(models.Model):
     name = models.TextField(max_length=50)
